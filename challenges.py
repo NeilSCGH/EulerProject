@@ -72,4 +72,31 @@ if run<=5:
 
 ##ID 6
 if run<=6:
+    max=100
     print("\nID 6")
+    squareOfSum=np.sum(range(max+1))**2
+    sumOfSquare=np.sum(np.square(range(max+1)))
+    print(squareOfSum-sumOfSquare)
+
+##ID 7
+if run<=7:
+    print("\nID 7")
+    max=150000
+    primes=np.arange(max+1)
+    for i in range(2,max):
+        multiples=np.arange(i,int(max/i+1))*i
+        primes[multiples]=0
+    primes=primes[primes!=0]
+    print(primes[10001])
+
+##ID 8
+if run<=8:
+    print("\nID 7")
+
+##ID 9
+if run<=9:
+    print("\nID 7")
+
+##ID 10
+if run<=10:
+    print("\nID 7")
