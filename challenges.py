@@ -1,5 +1,7 @@
 import numpy as np
 
+#link https://projecteuler.net/problem=[ID]
+
 ##ID 1
 print("ID 1")
 sum=0
@@ -21,7 +23,7 @@ print(sum)
 
 ##ID 3
 print("\nID 3")
-n=600851475143
+n=123  #600851475143
 max=int(np.sqrt(n))
 primes=np.arange(max+1)
 for i in range(2,max):
@@ -37,7 +39,16 @@ print(max)
 
 ##ID 4
 print("\nID 4")
+def isPalindromic(n):
+    return n == int((str(n))[::-1])
 
+max=0
+for a in range(100,1000):
+    for b in range(a,1000):
+        n=a*b
+        if isPalindromic(n) and n>max:
+            max=n
+print(max)
 
 ##ID 5
 print("\nID 5")
