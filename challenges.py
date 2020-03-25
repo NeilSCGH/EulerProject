@@ -52,3 +52,16 @@ print(max)
 
 ##ID 5
 print("\nID 5")
+def valid(n):
+    for i in range(1,21):
+        if n%i!=0: return False
+    return True
+
+n=1
+while (not valid(n)):
+    if n%5000000==0:print(n)
+    n+=1
+print(n)
+
+##ID 6
+print("\nID 6")
