@@ -21,16 +21,15 @@ print(sum)
 
 ##ID 3
 print("\nID 3")
-max=100000
+n=600851475143
+max=int(np.sqrt(n))
 primes=np.arange(max+1)
-n=int(np.sqrt(max))
-for i in range(2,n):
+for i in range(2,max):
     multiples=np.arange(i,int(max/i+1))*i
     primes[multiples]=0
 primes=primes[primes!=0]
 print("primes ok")
 
-n=600851475143
 max=primes[0]
 for p in primes:
     if n%p==0 and p>max: max=p
