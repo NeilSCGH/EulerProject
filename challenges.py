@@ -88,15 +88,3 @@ if run<=7:
         primes[multiples]=0
     primes=primes[primes!=0]
     print(primes[10001])
-
-##ID 8
-if run<=8:
-    print("\nID 7")
-
-##ID 9
-if run<=9:
-    print("\nID 7")
-
-##ID 10
-if run<=10:
-    print("\nID 7")
