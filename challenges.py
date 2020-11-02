@@ -2,7 +2,7 @@ import numpy as np
 
 #link https://projecteuler.net/problem=[ID]
 
-run=7
+run=1
 
 ##ID 1
 if run<=1:
